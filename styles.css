@@ -1,1 +1,145 @@
 /* Lanterns marketing site styles. Sections: tokens → base → primitives → nav → hero → demo → about → features → biomes → keepers → aux → footer → responsive. */
+
+/* === DESIGN TOKENS === */
+:root {
+  /* Palette (mapped from game's palette.gd) */
+  --c-parchment: #f4ead8;
+  --c-parchment-deep: #e9dcc4;
+  --c-ink: #131734;
+  --c-stone: #4a4f63;
+  --c-lantern-edge: #c97e3a;
+  --c-lantern-warm: #f6c177;
+  --c-firefly-glow: #f2f7b0;
+
+  /* Type */
+  --font-display: "Fraunces", ui-serif, "Cormorant Garamond", Georgia, serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  /* Rhythm */
+  --section-pad-y: 5rem;
+  --section-pad-x: 2rem;
+  --content-max: 64rem;
+  --measure: 36rem;
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+@media (max-width: 720px) {
+  :root {
+    --section-pad-y: 3rem;
+    --section-pad-x: 1.25rem;
+  }
+}
+
+/* === BASE === */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--c-parchment);
+  color: var(--c-ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img, svg { display: block; max-width: 100%; }
+a { color: var(--c-lantern-edge); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* === TYPOGRAPHY === */
+.display {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.0;
+  letter-spacing: -0.015em;
+  color: var(--c-ink);
+}
+.display em { font-style: italic; font-weight: 400; color: var(--c-lantern-edge); }
+
+.eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--c-lantern-edge);
+  font-weight: 600;
+}
+
+.subtitle {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--c-stone);
+}
+
+.body { font-family: var(--font-display); font-size: 1.05rem; line-height: 1.7; color: var(--c-stone); }
+
+/* === LAYOUT === */
+.section {
+  padding: var(--section-pad-y) var(--section-pad-x);
+}
+.section--inverse { background: var(--c-ink); color: var(--c-parchment); }
+.section--inverse .display { color: var(--c-parchment); }
+.section--inverse .body { color: rgba(244, 234, 216, 0.78); }
+.section--tinted { background: var(--c-parchment-deep); }
+
+.container {
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+.container--narrow { max-width: var(--measure); }
+.text-center { text-align: center; }
+
+/* === BUTTONS === */
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  transition: transform 0.15s var(--ease), background 0.2s var(--ease), color 0.2s var(--ease);
+  text-decoration: none;
+}
+.button:hover { transform: translateY(-1px); text-decoration: none; }
+.button:focus-visible { outline: 2px solid var(--c-lantern-warm); outline-offset: 3px; }
+
+.button-primary {
+  background: var(--c-ink);
+  color: var(--c-lantern-warm);
+}
+.button-primary:hover { background: #1f2549; }
+
+.button-ghost {
+  background: transparent;
+  color: var(--c-ink);
+  border-color: var(--c-ink);
+}
+.button-ghost:hover { background: rgba(19, 23, 52, 0.06); }
+
+.button[aria-disabled="true"] { opacity: 0.55; cursor: not-allowed; pointer-events: none; }
+
+/* === CARDS === */
+.card {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(19, 23, 52, 0.08);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
