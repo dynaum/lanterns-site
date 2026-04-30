@@ -31,15 +31,21 @@
     document.querySelectorAll("main > .section").forEach((el) => {
       el.classList.add("section--will-fade");
     });
+    const reveal = (el) => {
+      el.classList.add("section--faded-in");
+      io.unobserve(el);
+    };
     const io = new IntersectionObserver((entries) => {
-      for (const entry of entries) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("section--faded-in");
-          io.unobserve(entry.target);
-        }
-      }
+      for (const entry of entries) if (entry.isIntersecting) reveal(entry.target);
     }, { threshold: 0.12, rootMargin: "0px 0px -10% 0px" });
     document.querySelectorAll("main > .section").forEach((el) => io.observe(el));
+    // Failsafe: if a tool or non-scrolling client never triggers the IO
+    // (search bots, screenshot capture, jumped-to-anchor loads), reveal
+    // anything still hidden after a beat so content is never permanently
+    // invisible.
+    setTimeout(() => {
+      document.querySelectorAll("main > .section--will-fade:not(.section--faded-in)").forEach(reveal);
+    }, 1500);
   }
 
   // 3. Demo iframe focus hint — when the user clicks the iframe, hide the hint after a beat.
