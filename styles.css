@@ -328,3 +328,35 @@ a:hover { text-decoration: underline; }
   background: rgba(19, 23, 52, 0.04);
   text-align: right;
 }
+
+/* === FEATURES === */
+.features__head { text-align: center; margin-bottom: 3rem; }
+.features__title { font-size: clamp(2rem, 4.5vw, 3rem); margin: 0.5rem 0 0; }
+.features__grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.feature {
+  background: var(--c-parchment);
+  border-color: rgba(19, 23, 52, 0.1);
+}
+.feature__icon { color: var(--c-lantern-edge); margin-bottom: 0.85rem; }
+.feature__title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 0 0 0.4rem;
+  color: var(--c-ink);
+}
+.feature__copy { margin: 0; font-size: 0.95rem; color: var(--c-stone); line-height: 1.55; }
+
+@media (max-width: 960px) {
+  .features__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .features__grid { grid-template-columns: 1fr; }
+}
