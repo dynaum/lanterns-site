@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768" width="512" height="768">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1444"/>
+      <stop offset="50%" stop-color="#4a1f5e"/>
+      <stop offset="100%" stop-color="#a83a4a"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx="0.5" cy="0.55" r="0.7">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.45"/>
+    </radialGradient>
+    <radialGradient id="goldGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ffd96a" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#ff7a3a" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ff5a1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="roseGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ffb0c4" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#e8506e" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#a83a4a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd96a"/>
+      <stop offset="100%" stop-color="#c43d1f"/>
+    </linearGradient>
+    <linearGradient id="roseBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffb0c4"/>
+      <stop offset="100%" stop-color="#a83a4a"/>
+    </linearGradient>
+    <filter id="halo" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="768" fill="url(#bg)"/>
+  <rect width="512" height="768" fill="url(#vignette)"/>
+
+  <g fill="#fff8e0" opacity="0.7">
+    <circle cx="80" cy="100" r="1.4"/>
+    <circle cx="220" cy="60" r="1"/>
+    <circle cx="380" cy="120" r="1.2"/>
+    <circle cx="440" cy="80" r="1"/>
+    <circle cx="60" cy="220" r="1.1"/>
+    <circle cx="450" cy="200" r="0.9"/>
+  </g>
+
+  <circle cx="140" cy="500" r="140" fill="url(#goldGlow)" filter="url(#halo)"/>
+  <circle cx="380" cy="500" r="140" fill="url(#roseGlow)" filter="url(#halo)"/>
+
+  <path d="M 100 768 L 110 600 Q 124 500 180 440 L 180 380 Q 180 320 220 290 Q 256 280 292 290 Q 332 320 332 380 L 332 440 Q 388 500 402 600 L 412 768 Z" fill="#0a0414"/>
+
+  <path d="M 56 768 L 130 500 Q 140 470 168 460 L 184 470 Q 188 478 184 488 L 130 600 L 110 768 Z" fill="#0a0414" opacity="0.92"/>
+  <path d="M 456 768 L 382 500 Q 372 470 344 460 L 328 470 Q 324 478 328 488 L 382 600 L 402 768 Z" fill="#0a0414" opacity="0.92"/>
+
+  <path d="M 180 380 Q 180 320 220 290 Q 256 280 292 290 Q 332 320 332 380 L 332 396 Q 322 388 312 388 L 200 388 Q 190 388 180 396 Z" fill="#04010a"/>
+  <ellipse cx="256" cy="394" rx="56" ry="36" fill="#04010a"/>
+  <path d="M 256 410 Q 240 426 218 432 Q 204 432 198 422 Q 192 410 206 402" fill="#04010a"/>
+
+  <line x1="148" y1="492" x2="148" y2="430" stroke="#3a1a0a" stroke-width="2.4"/>
+  <line x1="364" y1="492" x2="364" y2="430" stroke="#3a1a0a" stroke-width="2.4"/>
+
+  <g transform="translate(148 530)">
+    <circle r="48" fill="url(#goldGlow)"/>
+    <rect x="-18" y="-32" width="36" height="6" fill="#3a1a0a" rx="1"/>
+    <ellipse cx="0" cy="0" rx="24" ry="32" fill="url(#goldBody)"/>
+    <ellipse cx="0" cy="0" rx="24" ry="32" fill="none" stroke="#c43d1f" stroke-width="1.6"/>
+    <path d="M -24 -10 Q 0 -4 24 -10" stroke="#7a2a14" stroke-width="1.4" fill="none" opacity="0.55"/>
+    <path d="M -24 10 Q 0 16 24 10" stroke="#7a2a14" stroke-width="1.4" fill="none" opacity="0.55"/>
+    <rect x="-14" y="28" width="28" height="7" fill="#3a1a0a" rx="1"/>
+    <ellipse cx="0" cy="2" rx="9" ry="14" fill="#fff4c2" opacity="0.9"/>
+    <line x1="0" y1="-32" x2="0" y2="-44" stroke="#3a1a0a" stroke-width="2" opacity="0.7"/>
+  </g>
+
+  <g transform="translate(364 530)">
+    <circle r="48" fill="url(#roseGlow)"/>
+    <rect x="-18" y="-32" width="36" height="6" fill="#3a1a0a" rx="1"/>
+    <ellipse cx="0" cy="0" rx="24" ry="32" fill="url(#roseBody)"/>
+    <ellipse cx="0" cy="0" rx="24" ry="32" fill="none" stroke="#7a1f3a" stroke-width="1.6"/>
+    <path d="M -24 -10 Q 0 -4 24 -10" stroke="#5a1428" stroke-width="1.4" fill="none" opacity="0.55"/>
+    <path d="M -24 10 Q 0 16 24 10" stroke="#5a1428" stroke-width="1.4" fill="none" opacity="0.55"/>
+    <rect x="-14" y="28" width="28" height="7" fill="#3a1a0a" rx="1"/>
+    <ellipse cx="0" cy="2" rx="9" ry="14" fill="#ffe0e8" opacity="0.9"/>
+    <line x1="0" y1="-32" x2="0" y2="-44" stroke="#3a1a0a" stroke-width="2" opacity="0.7"/>
+  </g>
+
+  <g fill="#ffd96a" opacity="0.75">
+    <circle cx="120" cy="440" r="1.4"/>
+    <circle cx="180" cy="460" r="1.2"/>
+    <circle cx="200" cy="540" r="1.3"/>
+  </g>
+  <g fill="#ffb0c4" opacity="0.75">
+    <circle cx="392" cy="440" r="1.4"/>
+    <circle cx="332" cy="460" r="1.2"/>
+    <circle cx="312" cy="540" r="1.3"/>
+  </g>
+</svg>
