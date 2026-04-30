@@ -301,3 +301,30 @@ a:hover { text-decoration: underline; }
   border-top: 1px solid rgba(246, 193, 119, 0.3);
 }
 .demo__pop:hover { color: var(--c-firefly-glow); text-decoration: none; }
+
+/* === ABOUT === */
+.about__title { font-size: clamp(2rem, 4.5vw, 3rem); margin: 0.5rem 0 2rem; }
+.about__body { display: flex; flex-direction: column; gap: 1.1rem; max-width: 36rem; margin: 0 auto; }
+.about__clip {
+  margin: 3rem 0 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(19, 23, 52, 0.1);
+  background: var(--c-parchment-deep);
+}
+.about__clip-placeholder {
+  aspect-ratio: 16 / 9;
+  display: grid;
+  place-items: center;
+  color: var(--c-stone);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
+}
+.about__caption {
+  padding: 0.6rem 0.9rem;
+  font-size: 0.75rem;
+  color: var(--c-stone);
+  background: rgba(19, 23, 52, 0.04);
+  text-align: right;
+}
