@@ -1,4 +1,9 @@
 .superpowers/
+.playwright-mcp/
 .DS_Store
 node_modules/
 *.log
+
+# local screenshot/preview artifacts
+lanterns-site-*.png
+*-direct.png
