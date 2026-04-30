@@ -1,5 +1,6 @@
 .superpowers/
 .playwright-mcp/
+.wrangler/
 .DS_Store
 node_modules/
 *.log
