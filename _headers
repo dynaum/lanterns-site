@@ -1,5 +1,9 @@
+# Apply security headers to everything; let Cloudflare Pages set sensible
+# Cache-Control defaults for HTML (short cache, must-revalidate) and override
+# only for /assets/* to opt those into long-cache. CF Pages concatenates
+# matching rules' headers, so we can't safely set Cache-Control on /* without
+# duplicating it on more specific paths.
 /*
-  Cache-Control: public, max-age=300, must-revalidate
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
 
