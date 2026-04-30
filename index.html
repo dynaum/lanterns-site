@@ -170,11 +170,86 @@
     </ol>
   </div>
 </section>
-    <section id="status"></section>
-    <section id="press"></section>
-    <section id="feedback"></section>
+    <section id="status" class="section status">
+  <div class="container container--narrow text-center">
+    <p class="eyebrow">Status</p>
+    <h2 class="display status__title">In active development for Steam.</h2>
+    <p class="body status__copy">Lanterns is being built in Godot 4. The most recent milestone is <strong>v0.10 — Steam prep</strong>: pause + settings, gamepad support, achievements scaffolding, and a Steam wrapper. The web demo plays the same content.</p>
+    <p class="status__links">
+      <a href="https://github.com/dynaum/lanterns" target="_blank" rel="noopener">View source on GitHub ↗</a>
+    </p>
+  </div>
+</section>
+
+<section id="press" class="section section--tinted press">
+  <div class="container">
+    <header class="press__head text-center">
+      <p class="eyebrow">For the press</p>
+      <h2 class="display press__title">Press kit</h2>
+    </header>
+    <div class="press__grid">
+      <div class="card">
+        <h3 class="press__h3">About Dynaum</h3>
+        <p class="press__copy">Dynaum is a small studio of one. Lanterns is its first game — a slow, soft bullet-heaven made for late nights.</p>
+      </div>
+      <div class="card">
+        <h3 class="press__h3">Assets</h3>
+        <p class="press__copy"><a href="/assets/press/lanterns-press-kit.zip" aria-disabled="true" title="Coming soon">Press kit (zip)</a> — logo, screenshots, fact sheet. <em>Coming soon.</em></p>
+      </div>
+      <div class="card">
+        <h3 class="press__h3">Contact</h3>
+        <p class="press__copy"><a href="mailto:elber@dynaum.com">elber@dynaum.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="feedback" class="section feedback">
+  <div class="container container--narrow">
+    <header class="feedback__head text-center">
+      <p class="eyebrow">Help shape the game</p>
+      <h2 class="display feedback__title">Tell me what you thought.</h2>
+      <p class="body feedback__lede">If you played the demo — even for a minute — I'd love to hear what kept you playing, what made you bounce, and what you wished was different.</p>
+    </header>
+
+    <!--
+      Tally form embed slot.
+      Once the Tally form exists, replace the placeholder block below with:
+
+      <iframe
+        data-tally-src="https://tally.so/embed/<form-id>?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+        loading="lazy"
+        width="100%"
+        height="500"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Lanterns feedback"></iframe>
+      <script async src="https://tally.so/widgets/embed.js"></script>
+    -->
+    <div class="feedback__placeholder">
+      <p>The feedback form is being set up. Until then, please email <a href="mailto:elber@dynaum.com?subject=Lanterns%20feedback">elber@dynaum.com</a> — short notes are welcome.</p>
+    </div>
+
+    <p class="feedback__fallback text-center">Or reach out directly: <a href="mailto:elber@dynaum.com?subject=Lanterns%20feedback">elber@dynaum.com</a></p>
+  </div>
+</section>
   </main>
-  <footer id="site-footer"></footer>
+  <footer id="site-footer" class="site-footer">
+  <div class="container site-footer__inner">
+    <p class="site-footer__brand">
+      <img src="/assets/lantern.svg" width="18" height="18" alt="">
+      Lanterns © Dynaum
+    </p>
+    <p class="site-footer__links">
+      <a href="https://github.com/dynaum/lanterns" target="_blank" rel="noopener">GitHub</a>
+      <span aria-hidden="true">·</span>
+      <a href="mailto:elber@dynaum.com">Email</a>
+      <span aria-hidden="true">·</span>
+      <span class="site-footer__made">Made with Godot 4</span>
+    </p>
+  </div>
+</footer>
   <script src="/app.js" defer></script>
 </body>
 </html>
