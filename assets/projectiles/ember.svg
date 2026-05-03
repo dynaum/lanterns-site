@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 460 160" role="img" aria-label="Ember Orb projectile">
+  <defs>
+    <radialGradient id="e-flame" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#fff3c8" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#f4b042" stop-opacity="0.85"/>
+      <stop offset="70%" stop-color="#e06b2a" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#9a3220" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="e-halo" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <radialGradient id="e-trail" cx="0.85" cy="0.5" r="0.6">
+      <stop offset="0%" stop-color="#f4b042" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#e06b2a" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#9a3220" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      from="-380 0" to="120 0" dur="2.2s" repeatCount="indefinite"/>
+    <ellipse cx="280" cy="160" rx="220" ry="18" fill="url(#e-trail)" filter="url(#e-halo)">
+      <animate attributeName="rx" values="200;230;200" dur="0.4s" repeatCount="indefinite"/>
+    </ellipse>
+    <circle cx="350" cy="160" r="60" fill="url(#e-flame)" filter="url(#e-halo)">
+      <animate attributeName="r" values="56;66;56" dur="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="160" r="22" fill="#e06b2a">
+      <animate attributeName="r" values="20;24;21;23;20" dur="0.35s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="160" r="14" fill="#f4b042">
+      <animate attributeName="r" values="13;15;13" dur="0.28s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="346" cy="156" r="6" fill="#fff8d8">
+      <animate attributeName="cx" values="346;348;345;347;346" dur="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="156;155;157;156" dur="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M 372 160 Q 388 154 396 160 Q 388 166 372 160" fill="#fff8d8">
+      <animate attributeName="d"
+        values="M 372 160 Q 388 154 396 160 Q 388 166 372 160;M 372 160 Q 390 156 400 160 Q 390 164 372 160;M 372 160 Q 388 154 396 160 Q 388 166 372 160"
+        dur="0.25s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g fill="#f4b042">
+    <circle cx="230" cy="150" r="1.4">
+      <animate attributeName="cx" values="230;140" dur="0.9s" begin="0.045s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="0.9s" begin="0.045s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="270" cy="172" r="1.4">
+      <animate attributeName="cx" values="270;180" dur="0.9s" begin="0.18s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="0.9s" begin="0.18s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="190" cy="156" r="1.4">
+      <animate attributeName="cx" values="190;100" dur="0.9s" begin="0.315s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="0.9s" begin="0.315s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="250" cy="178" r="1.4">
+      <animate attributeName="cx" values="250;160" dur="0.9s" begin="0.45s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="0.9s" begin="0.45s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="210" cy="144" r="1.4">
+      <animate attributeName="cx" values="210;120" dur="0.9s" begin="0.585s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="0.9s" begin="0.585s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="260" cy="166" r="1.4">
+      <animate attributeName="cx" values="260;170" dur="0.9s" begin="0.72s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="0.9s" begin="0.72s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
