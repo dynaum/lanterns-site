@@ -258,21 +258,6 @@ a:hover { text-decoration: underline; }
 
 /* === DEMO === */
 .demo__title { font-size: clamp(2rem, 4.5vw, 3rem); margin: 0.6rem auto 1rem; }
-.demo__hint {
-  max-width: 32rem;
-  margin: 0 auto 2rem;
-  color: rgba(244, 234, 216, 0.78);
-}
-.demo__hint kbd {
-  display: inline-block;
-  background: rgba(246, 193, 119, 0.15);
-  color: var(--c-lantern-warm);
-  border: 1px solid rgba(246, 193, 119, 0.4);
-  border-radius: 4px;
-  padding: 0.05rem 0.4rem;
-  font-family: var(--font-body);
-  font-size: 0.78rem;
-}
 .demo__cta {
   margin: 0 auto;
   padding: 1.1rem 2.75rem;
