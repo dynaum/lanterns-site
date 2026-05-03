@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lanterns — a cozy bullet-heaven</title>
-  <meta name="description" content="A cozy bullet-heaven about a Keeper, a swarm of moths, and the soft light that holds the night together. Built in Godot 4. 1–2 players local co-op.">
+  <meta name="description" content="A cozy bullet-heaven about a Keeper, five named yokai, and the soft light that holds the night together. Mokuhanga woodblock art, procedural audio. Built in Godot 4. 1–2 players local co-op.">
   <meta property="og:title" content="Lanterns — a cozy bullet-heaven">
   <meta property="og:description" content="A cozy bullet-heaven about a Keeper, a swarm of moths, and the soft light that holds the night together.">
   <meta property="og:type" content="website">
@@ -16,7 +16,7 @@
   <link rel="icon" type="image/svg+xml" href="/assets/lantern.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
@@ -81,8 +81,8 @@
         <h2 class="display about__title text-center">A small, soft kind of chaos.</h2>
         <div class="about__body">
           <p class="body">You are the Keeper, alone in a twilight garden. Moths swarm from the dusk and your lantern catches them, one by one. Every level brings a new goal, a new modifier, a new shape to the swarm — and three upgrade cards to choose from.</p>
-          <p class="body">Sometimes there's a friend with you, lantern and all. Sometimes it's just the wind, the cricket bed, and an eight-chord ambient progression that loops while you light up the night.</p>
-          <p class="body">Lanterns is built in Godot 4. Vector silhouettes, painterly biomes, procedural audio. No assets bought; everything you see and hear was made for this game.</p>
+          <p class="body">Along the way you will meet five named yokai — Hitodama, Kage, Kasa-obake, Karasu-tengu, and Oni — each with their own idle behaviour and attack pattern. Sometimes there's a friend with you, lantern and all.</p>
+          <p class="body">Lanterns is built in Godot 4. The visuals follow a mokuhanga woodblock print direction — ink on washi, paper grain, hand-cut silhouettes, procedural audio. No external assets; everything you see and hear was made for this game.</p>
         </div>
         <figure class="about__clip">
           <div class="about__clip-placeholder" aria-hidden="true">
@@ -102,7 +102,7 @@
       <li class="card feature">
         <img class="feature__icon" src="/assets/icons/combat.svg" width="32" height="32" alt="">
         <h3 class="feature__title">Auto-aim combat</h3>
-        <p class="feature__copy">Move; the lantern handles the rest. Range grows with your level and your upgrades.</p>
+        <p class="feature__copy">Move; the lantern handles the rest. Seven enemy types — moths and five named yokai — each with their own behaviour.</p>
       </li>
       <li class="card feature">
         <img class="feature__icon" src="/assets/icons/upgrades.svg" width="32" height="32" alt="">
@@ -126,8 +126,8 @@
       </li>
       <li class="card feature">
         <img class="feature__icon" src="/assets/icons/biomes.svg" width="32" height="32" alt="">
-        <h3 class="feature__title">Painterly biomes</h3>
-        <p class="feature__copy">Dusk, Autumn, Winter, Storm. The garden rotates every five levels.</p>
+        <h3 class="feature__title">Woodblock biomes</h3>
+        <p class="feature__copy">Dusk, Autumn, Winter, Storm — rotating every five levels. Rendered with a mokuhanga woodblock shader: paper grain and hand-cut edges.</p>
       </li>
     </ul>
   </div>
@@ -166,11 +166,11 @@
       <p class="body keepers__lede">Each starts with different stats and a signature upgrade. New classes unlock as you play.</p>
     </header>
     <ol class="keepers__row" role="list">
-      <li class="keeper"><img src="/assets/keepers/keeper_default.svg" alt="Default keeper portrait" loading="lazy"><h3 class="keeper__name">Keeper</h3><p class="keeper__copy">Balanced. The starting class.</p></li>
-      <li class="keeper"><img src="/assets/keepers/keeper_glass.svg" alt="Glass keeper portrait" loading="lazy"><h3 class="keeper__name">Glass</h3><p class="keeper__copy">Fragile, but the beam reaches farther.</p></li>
-      <li class="keeper"><img src="/assets/keepers/keeper_stone.svg" alt="Stone keeper portrait" loading="lazy"><h3 class="keeper__name">Stone</h3><p class="keeper__copy">Slow and steady. Soaks hits.</p></li>
-      <li class="keeper"><img src="/assets/keepers/keeper_twin.svg" alt="Twin keeper portrait" loading="lazy"><h3 class="keeper__name">Twin</h3><p class="keeper__copy">A second lantern, slightly off-axis.</p></li>
-      <li class="keeper"><img src="/assets/keepers/keeper_wanderer.svg" alt="Wanderer keeper portrait" loading="lazy"><h3 class="keeper__name">Wanderer</h3><p class="keeper__copy">Fast feet, sharper dash.</p></li>
+      <li class="keeper"><img src="/assets/keepers/keeper_default.svg" alt="The Keeper portrait" loading="lazy"><h3 class="keeper__name">The Keeper</h3><p class="keeper__copy">Balanced. 3 petals, steady stride. Always unlocked.</p></li>
+      <li class="keeper"><img src="/assets/keepers/keeper_glass.svg" alt="Glass Lantern portrait" loading="lazy"><h3 class="keeper__name">Glass Lantern</h3><p class="keeper__copy">1 petal, faster lantern, longer reach. Unlocks at Level 5.</p></li>
+      <li class="keeper"><img src="/assets/keepers/keeper_stone.svg" alt="Stone Keeper portrait" loading="lazy"><h3 class="keeper__name">Stone Keeper</h3><p class="keeper__copy">5 petals, slower stride and lantern. Unlocks at Level 10.</p></li>
+      <li class="keeper"><img src="/assets/keepers/keeper_twin.svg" alt="Twin Lantern portrait" loading="lazy"><h3 class="keeper__name">Twin Lantern</h3><p class="keeper__copy">2 petals. Begins with Twin Flame already lit.</p></li>
+      <li class="keeper"><img src="/assets/keepers/keeper_wanderer.svg" alt="Wandering Light portrait" loading="lazy"><h3 class="keeper__name">Wandering Light</h3><p class="keeper__copy">Fast as the wind. Fewer petals, slower lantern. Unlocks at Level 15.</p></li>
     </ol>
   </div>
 </section>
@@ -178,7 +178,7 @@
   <div class="container container--narrow text-center">
     <p class="eyebrow">Status</p>
     <h2 class="display status__title">In active development for Steam.</h2>
-    <p class="body status__copy">Lanterns is being built in Godot 4. The most recent milestone is <strong>v0.10 — Steam prep</strong>: pause + settings, gamepad support, achievements scaffolding, and a Steam wrapper. The web demo plays the same content.</p>
+    <p class="body status__copy">Lanterns is being built in Godot 4. The most recent milestone is <strong>v1.0 — mokuhanga art direction</strong>: woodblock print shader, animated yokai, class-specific projectiles (Ember Orb / Moonbeam / Cinder Shard / Twin Chord), and EB Garamond typography. The web demo plays the same content.</p>
     <p class="status__links">
       <a href="https://github.com/dynaum/lanterns" target="_blank" rel="noopener">View source on GitHub ↗</a>
     </p>
