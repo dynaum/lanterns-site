@@ -454,6 +454,24 @@ a:hover { text-decoration: underline; }
 }
 .keeper__badge .kanji { font-size: 0.9rem; line-height: 1; }
 
+/* === KEEPER PROJECTILE === */
+.keeper__projectile {
+  width: 100%;
+  max-width: 160px;
+  margin: 0.6rem 0 0.2rem;
+  aspect-ratio: 460 / 120;
+  display: block;
+}
+.keeper__projectile img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .keeper__projectile { display: none; }
+}
+
 /* === YOKAI === */
 .yokai__head { text-align: center; margin-bottom: 3rem; }
 .yokai__title { font-size: clamp(2rem, 4.5vw, 3rem); margin: 0.5rem 0 1rem; }
