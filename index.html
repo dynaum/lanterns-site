@@ -158,6 +158,47 @@
     </ol>
   </div>
 </section>
+    <section id="yokai" class="section section--inverse yokai">
+  <div class="container">
+    <header class="yokai__head">
+      <p class="eyebrow" style="color: var(--c-lantern-warm)">Five yokai in the garden</p>
+      <h2 class="display yokai__title">Each one behaves differently.</h2>
+      <p class="body yokai__lede">Named spirits — drawn in ink, animated in the engine. None of them idle the same way twice.</p>
+    </header>
+    <ol class="yokai__row" role="list">
+      <li class="yokai-card">
+        <img src="/assets/yokai/yokai_hitodama.svg" alt="Hitodama — a drifting soul-flame" loading="lazy">
+        <p class="yokai-card__type">Common</p>
+        <h3 class="yokai-card__name">Hitodama</h3>
+        <p class="yokai-card__copy">A drifting soul-flame. Bobs gently — until your beam finds it.</p>
+      </li>
+      <li class="yokai-card">
+        <img src="/assets/yokai/yokai_kage.svg" alt="Kage — a hooded shadow with glowing eyes" loading="lazy">
+        <p class="yokai-card__type">Tough</p>
+        <h3 class="yokai-card__name">Kage</h3>
+        <p class="yokai-card__copy">Hooded shadow with glowing eyes. Takes two hits to quiet.</p>
+      </li>
+      <li class="yokai-card">
+        <img src="/assets/yokai/yokai_kasa.svg" alt="Kasa-obake — a one-eyed umbrella spirit" loading="lazy">
+        <p class="yokai-card__type">Kamikaze</p>
+        <h3 class="yokai-card__name">Kasa-obake</h3>
+        <p class="yokai-card__copy">One-eyed umbrella. Hops on a wooden sandal straight toward your lantern.</p>
+      </li>
+      <li class="yokai-card">
+        <img src="/assets/yokai/yokai_tengu.svg" alt="Karasu-tengu — a crow demon that dives" loading="lazy">
+        <p class="yokai-card__type">Sleeper</p>
+        <h3 class="yokai-card__name">Karasu-tengu</h3>
+        <p class="yokai-card__copy">A crow demon that perches and waits. Wings flap before it dives.</p>
+      </li>
+      <li class="yokai-card">
+        <img src="/assets/yokai/yokai_oni.svg" alt="Oni — the red horned demon boss" loading="lazy">
+        <p class="yokai-card__type">Boss — every Level 10</p>
+        <h3 class="yokai-card__name">Oni</h3>
+        <p class="yokai-card__copy">Red-horned, club raised. Summons minions. HP scales each tier.</p>
+      </li>
+    </ol>
+  </div>
+</section>
     <section id="keepers" class="section section--tinted keepers">
   <div class="container">
     <header class="keepers__head">
@@ -166,12 +207,55 @@
       <p class="body keepers__lede">Each starts with different stats and a signature upgrade. New classes unlock as you play.</p>
     </header>
     <ol class="keepers__row" role="list">
-      <li class="keeper"><img src="/assets/keepers/keeper_default.svg" alt="The Keeper portrait" loading="lazy"><h3 class="keeper__name">The Keeper</h3><p class="keeper__copy">Balanced. 3 petals, steady stride. Always unlocked.</p></li>
-      <li class="keeper"><img src="/assets/keepers/keeper_glass.svg" alt="Glass Lantern portrait" loading="lazy"><h3 class="keeper__name">Glass Lantern</h3><p class="keeper__copy">1 petal, faster lantern, longer reach. Unlocks at Level 5.</p></li>
-      <li class="keeper"><img src="/assets/keepers/keeper_stone.svg" alt="Stone Keeper portrait" loading="lazy"><h3 class="keeper__name">Stone Keeper</h3><p class="keeper__copy">5 petals, slower stride and lantern. Unlocks at Level 10.</p></li>
-      <li class="keeper"><img src="/assets/keepers/keeper_twin.svg" alt="Twin Lantern portrait" loading="lazy"><h3 class="keeper__name">Twin Lantern</h3><p class="keeper__copy">2 petals. Begins with Twin Flame already lit.</p></li>
-      <li class="keeper"><img src="/assets/keepers/keeper_wanderer.svg" alt="Wandering Light portrait" loading="lazy"><h3 class="keeper__name">Wandering Light</h3><p class="keeper__copy">Fast as the wind. Fewer petals, slower lantern. Unlocks at Level 15.</p></li>
+      <li class="keeper"><img src="/assets/keepers/keeper_default.svg" alt="The Keeper portrait" loading="lazy"><h3 class="keeper__name">The Keeper</h3><p class="keeper__copy">Balanced. 3 petals, steady stride. Always unlocked.</p><span class="keeper__badge"><span class="kanji">火</span> Ember Orb</span></li>
+      <li class="keeper"><img src="/assets/keepers/keeper_glass.svg" alt="Glass Lantern portrait" loading="lazy"><h3 class="keeper__name">Glass Lantern</h3><p class="keeper__copy">1 petal, faster lantern, longer reach. Unlocks at Level 5.</p><span class="keeper__badge"><span class="kanji">月</span> Moonbeam</span></li>
+      <li class="keeper"><img src="/assets/keepers/keeper_stone.svg" alt="Stone Keeper portrait" loading="lazy"><h3 class="keeper__name">Stone Keeper</h3><p class="keeper__copy">5 petals, slower stride and lantern. Unlocks at Level 10.</p><span class="keeper__badge"><span class="kanji">炭</span> Cinder Shard</span></li>
+      <li class="keeper"><img src="/assets/keepers/keeper_twin.svg" alt="Twin Lantern portrait" loading="lazy"><h3 class="keeper__name">Twin Lantern</h3><p class="keeper__copy">2 petals. Begins with Twin Flame already lit.</p><span class="keeper__badge"><span class="kanji">双</span> Twin Chord</span></li>
+      <li class="keeper"><img src="/assets/keepers/keeper_wanderer.svg" alt="Wandering Light portrait" loading="lazy"><h3 class="keeper__name">Wandering Light</h3><p class="keeper__copy">Fast as the wind. Fewer petals, slower lantern. Unlocks at Level 15.</p><span class="keeper__badge"><span class="kanji">火</span> Ember Orb</span></li>
     </ol>
+  </div>
+</section>
+    <section id="upgrades" class="section section--tinted upgrades">
+  <div class="container">
+    <header class="upgrades__head">
+      <p class="eyebrow">17 upgrade cards</p>
+      <h2 class="display upgrades__title">Build your lantern.</h2>
+      <p class="body upgrades__lede">Three cards appear between every level. Stack effects across the run — no two runs play the same.</p>
+    </header>
+    <ul class="upgrades__grid" role="list">
+      <li class="upgrade-card">
+        <h3 class="upgrade-card__title">Twin Flame</h3>
+        <p class="upgrade-card__copy">Fires an extra beam at the 2nd-nearest moth.</p>
+      </li>
+      <li class="upgrade-card">
+        <h3 class="upgrade-card__title">Chain Spark</h3>
+        <p class="upgrade-card__copy">+30% chance a catch arcs to the next nearest moth.</p>
+      </li>
+      <li class="upgrade-card">
+        <h3 class="upgrade-card__title">Thorn Petals</h3>
+        <p class="upgrade-card__copy">When you take a hit, 6 beams burst outward.</p>
+      </li>
+      <li class="upgrade-card">
+        <h3 class="upgrade-card__title">Lantern Bloom</h3>
+        <p class="upgrade-card__copy">Every 1.5 s the lantern flares — moths within 80 px fall.</p>
+      </li>
+      <li class="upgrade-card">
+        <h3 class="upgrade-card__title">Lantern's Heart</h3>
+        <p class="upgrade-card__copy">Once per pick, survive a fatal hit and heal to full.</p>
+      </li>
+      <li class="upgrade-card">
+        <h3 class="upgrade-card__title">Warden's Resolve</h3>
+        <p class="upgrade-card__copy">When down to 1 petal, gain 2 s of grace.</p>
+      </li>
+      <li class="upgrade-card">
+        <h3 class="upgrade-card__title">Piercing Light</h3>
+        <p class="upgrade-card__copy">Beams pass through +1 moth per cast.</p>
+      </li>
+      <li class="upgrade-card">
+        <h3 class="upgrade-card__title">Breath of Dawn</h3>
+        <p class="upgrade-card__copy">Every 8 fireflies caught, restore 1 petal.</p>
+      </li>
+    </ul>
   </div>
 </section>
     <section id="status" class="section status">
