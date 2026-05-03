@@ -36,6 +36,7 @@ Playable build:
 | Gameplay clip | Drop a 6–10s `loop.mp4` (h264) at `assets/clips/loop.mp4`, then update the `.about__clip` block in `index.html` to render a `<video autoplay muted loop playsinline>` instead of the placeholder div. |
 | Press kit zip | Drop `assets/press/lanterns-press-kit.zip` and remove `aria-disabled` from the Assets card link. |
 | og:image | Drop `assets/press/og.png` (1200×630). The meta tag is already wired. |
+| Screenshots | Once the screenshot pipeline (Slice S of `2026-05-03-tier3-steam-launch.md`) commits curated PNGs to `dynaum/lanterns/marketing/screenshots/`, copy them here: `cp ../lanterns/marketing/screenshots/ss-*.png assets/press/screenshots/` — or rename the curated picks to match: `ss-solo.png`, `ss-pick.png`, `ss-boss.png`, `ss-coop.png`, `ss-biome.png`. The `#screenshots` section on the site shows placeholder slots until the files exist. |
 
 ## Instagram launch assets
 
